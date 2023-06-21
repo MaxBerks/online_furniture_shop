@@ -6,7 +6,7 @@ export class Items extends Component {
         return (
             <main>
                 {this.props.items.map(item => (
-                    <Item key={item.id} item={item}/>
+                    <Item onShowItem={this.props.onShowItem} key={item.id} item={item} onAdd={this.props.onAdd}/>
                 ))}
             </main>
         )
